@@ -1,0 +1,11 @@
+PASS	Basic Statistics	sampleDat6_1_fq
+PASS	Per base sequence quality	sampleDat6_1_fq
+PASS	Per tile sequence quality	sampleDat6_1_fq
+PASS	Per sequence quality scores	sampleDat6_1_fq
+PASS	Per base sequence content	sampleDat6_1_fq
+WARN	Per sequence GC content	sampleDat6_1_fq
+PASS	Per base N content	sampleDat6_1_fq
+PASS	Sequence Length Distribution	sampleDat6_1_fq
+PASS	Sequence Duplication Levels	sampleDat6_1_fq
+PASS	Overrepresented sequences	sampleDat6_1_fq
+PASS	Adapter Content	sampleDat6_1_fq
