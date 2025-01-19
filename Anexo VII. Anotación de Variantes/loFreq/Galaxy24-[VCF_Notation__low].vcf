@@ -1,0 +1,48 @@
+##fileformat=VCFv4.0
+##FILTER=<ID=PASS,Description="All filters passed">
+##fileDate=20250119
+##source=lofreq call --verbose --ref /cvmfs/data.galaxyproject.org/byhand/hg38/sam_index/hg38.fa --call-indels --min-cov 30 --max-depth 1000000 --min-bq 6 --min-alt-bq 6 --min-mq 0 --max-mq 255 --min-jq 0 --min-alt-jq 0 --def-alt-jq 0 --sig 0.01 --bonf dynamic --no-default-filter -r chr1:1-248956422 -o /tmp/lofreq2_call_parallelw96lsabk/0.vcf.gz reads.bam 
+##reference=/cvmfs/data.galaxyproject.org/byhand/hg38/sam_index/hg38.fa
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_snvqual_41,Description="Minimum SNV Quality (Phred) 41">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_50,Description="Minimum SNV Quality (Phred) 50">
+##contig=<ID=chr1>
+##contig=<ID=chr5>
+##contig=<ID=chr7>
+##contig=<ID=chr10>
+##contig=<ID=chr21>
+##contig=<ID=chrX>
+##contig=<ID=chrM>
+##contig=<ID=chrUn_KI270746v1>
+##bcftools_normVersion=1.15.1+htslib-1.15.1
+##bcftools_normCommand=norm --fasta-ref ref_upper.fa --check-ref wx --multiallelics -both --site-win 1000 --output-type v --threads 1 input.vcf.gz; Date=Sun Jan 19 00:21:22 2025
+##SnpEffVersion="5.2 (build 2023-09-29 06:17), by Pablo Cingolani"
+##SnpEffCmd="SnpEff  -i vcf -o vcf -sequenceOntology -noShiftHgvs -oicr -lof -noLof -no-downstream -no-intergenic -no-intron -no-upstream -no-utr -stats /mnt/scratch/job_working_directory/010/711/10711699/outputs/dataset_a9632e96-71d3-4d4a-9718-428b4bb71ad6.dat -csvStats /mnt/scratch/job_working_directory/010/711/10711699/outputs/dataset_2e4f7aa2-07b6-4052-9c34-949a560f36f5.dat GRCh38.86 /mnt/user-data-volA/data25/d/6/d/dataset_d6debc95-9486-4ac8-9991-30c356ec88f0.dat "
+##INFO=<ID=ANN,Number=.,Type=String,Description="Functional annotations: 'Allele | Annotation | Annotation_Impact | Gene_Name | Gene_ID | Feature_Type | Feature_ID | Transcript_BioType | Rank | HGVS.c | HGVS.p | cDNA.pos / cDNA.length | CDS.pos / CDS.length | AA.pos / AA.length | Distance | ERRORS / WARNINGS / INFO' ">
+##INFO=<ID=OICR,Number=.,Type=String,Description="Format: ( Transcript | Distance from begining cDNA )">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+chr1	13369246	.	T	C	262.0	PASS	DP=50;AF=0.22;SB=0;DP4=25,14,7,4;ANN=C|missense_variant|MODERATE|PRAMEF19|ENSG00000204480|transcript|ENST00000376101.2|protein_coding|3/3|c.1054A>G|p.Asn352Asp|1054/1233|1054/1233|352/410||;OICR=(ENST00000376101|1054)
+chr1	13369247	.	G	A	262.0	PASS	DP=49;AF=0.22449;SB=0;DP4=24,14,7,4;ANN=A|synonymous_variant|LOW|PRAMEF19|ENSG00000204480|transcript|ENST00000376101.2|protein_coding|3/3|c.1053C>T|p.Asp351Asp|1053/1233|1053/1233|351/410||;OICR=(ENST00000376101|1053)
+chr1	13369358	.	G	A	83.0	PASS	DP=38;AF=0.105263;SB=2;DP4=17,17,3,1;ANN=A|synonymous_variant|LOW|PRAMEF19|ENSG00000204480|transcript|ENST00000376101.2|protein_coding|3/3|c.942C>T|p.Cys314Cys|942/1233|942/1233|314/410||;OICR=(ENST00000376101|942)
+chr1	13369384	.	G	A	94.0	PASS	DP=36;AF=0.111111;SB=9;DP4=16,15,4,0;ANN=A|missense_variant|MODERATE|PRAMEF19|ENSG00000204480|transcript|ENST00000376101.2|protein_coding|3/3|c.916C>T|p.Arg306Cys|916/1233|916/1233|306/410||;OICR=(ENST00000376101|916)
+chr1	109690516	.	G	C	424.0	PASS	DP=36;AF=0.416667;SB=1;DP4=7,14,4,11;ANN=C|missense_variant|MODERATE|GSTM1|ENSG00000134184|transcript|ENST00000369823.6|protein_coding|7/8|c.576G>C|p.Lys192Asn|621/852|576/714|192/237||;OICR=(ENST00000369823|621)
+chr1	146989687	.	A	G	79.0	PASS	DP=32;AF=0.125;SB=0;DP4=13,13,2,2;ANN=G|missense_variant|MODERATE|NBPF12|ENSG00000268043|transcript|ENST00000617844.4|protein_coding|28/34|c.3512A>G|p.Tyr1171Cys|3946/6326|3512/4374|1171/1457||;OICR=(ENST00000617844|3946)
+chr5	176106582	.	C	T	157.0	PASS	DP=36;AF=0.166667;SB=0;DP4=11,19,2,4;ANN=T|missense_variant|MODERATE|FAM153B|ENSG00000182230|transcript|ENST00000253490.5|protein_coding|16/21|c.854C>T|p.Pro285Leu|854/1913|854/1164|285/387||;OICR=(ENST00000253490|854)
+chr7	75024408	.	A	G	452.0	PASS	DP=34;AF=0.470588;SB=3;DP4=10,7,12,4
+chr7	76440312	.	G	A	286.0	PASS	DP=43;AF=0.27907;SB=0;DP4=12,18,5,7;ANN=A|synonymous_variant|LOW|ZP3|ENSG00000188372|transcript|ENST00000394857.7|protein_coding|6/8|c.894G>A|p.Lys298Lys|952/1348|894/1275|298/424||;OICR=(ENST00000394857|952)
+chr10	87358368	.	C	T	673.0	PASS	DP=46;AF=0.5;SB=6;DP4=7,16,12,11;ANN=T|missense_variant|MODERATE|NUTM2D|ENSG00000214562|transcript|ENST00000381697.6|protein_coding|1/7|c.103C>T|p.His35Tyr|701/3290|103/2421|35/806||;OICR=(ENST00000381697|701)
+chr21	10464942	.	T	C	101.0	PASS	DP=34;AF=0.117647;SB=2;DP4=11,19,2,2;ANN=C|intragenic_variant|MODIFIER|BAGE2|ENSG00000187172|gene_variant|ENSG00000187172|||n.10464942T>C||||||
+chrX	85108134	.	A	G	1384.0	PASS	DP=38;AF=1;SB=0;DP4=0,0,20,18;ANN=G|missense_variant|MODERATE|SATL1|ENSG00000184788|transcript|ENST00000509231.1|protein_coding|1/5|c.835T>C|p.Trp279Arg|915/2224|835/1899|279/632||;OICR=(ENST00000509231|915)
+chrX	141003560	.	C	G	653.0	PASS	DP=37;AF=0.594595;SB=9;DP4=6,6,4,18;ANN=G|missense_variant|MODERATE|SPANXB1|ENSG00000227234|transcript|ENST00000449283.1|protein_coding|2/2|c.220C>G|p.Leu74Val|323/469|220/312|74/103||;OICR=(ENST00000449283|323)
+chrM	723	.	A	G	2427.0	PASS	DP=67;AF=0.985075;SB=0;DP4=0,0,26,40;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+chrM	750	.	A	G	2188.0	PASS	DP=61;AF=1;SB=0;DP4=0,0,22,39;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+chrUn_KI270746v1	35708	.	C	T	567.0	PASS	DP=38;AF=0.5;SB=2;DP4=12,7,9,10;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND

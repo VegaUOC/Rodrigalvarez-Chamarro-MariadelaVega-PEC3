@@ -1,0 +1,12 @@
+# The following table is formatted as tab separated values. 
+#GeneName	GeneId	TranscriptId	BioType	variants_impact_LOW	variants_impact_MODERATE	variants_impact_MODIFIER	variants_effect_intron_variant	variants_effect_missense_variant	variants_effect_synonymous_variant
+FAM153B	ENSG00000182230	ENST00000253490	protein_coding	0	1	0	0	1	0
+GATSL2	ENSG00000274070	ENST00000616305	protein_coding	0	0	1	1	0	0
+GSTM1	ENSG00000134184	ENST00000369823	protein_coding	0	1	0	0	1	0
+GSTM2	ENSG00000213366	ENST00000369831	protein_coding	0	0	1	1	0	0
+NBPF12	ENSG00000268043	ENST00000617844	protein_coding	0	1	0	0	1	0
+NUTM2D	ENSG00000214562	ENST00000381697	protein_coding	0	1	0	0	1	0
+PRAMEF19	ENSG00000204480	ENST00000376101	protein_coding	2	2	0	0	2	2
+SATL1	ENSG00000184788	ENST00000509231	protein_coding	0	1	0	0	1	0
+SPANXB1	ENSG00000227234	ENST00000449283	protein_coding	0	1	0	0	1	0
+ZP3	ENSG00000188372	ENST00000394857	protein_coding	1	0	0	0	0	1
